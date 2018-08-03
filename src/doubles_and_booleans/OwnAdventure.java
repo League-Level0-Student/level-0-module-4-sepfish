@@ -51,6 +51,7 @@ public class OwnAdventure {
 								JOptionPane.showMessageDialog(null, "Of course, you had to choose the most heavily-guarded path of the sewers. \nThe middle path was commonly used to sneak into the castle, so the king had stationed some guards there.");
 								JOptionPane.showMessageDialog(null, "They see you approaching, and unsheath their swords...");
 								JOptionPane.showMessageDialog(null, "You raise your dagger in response. You're a trained assassin. You can take them down.");
+								JOptionPane.showMessageDialog(null, "As you engage the guards in combat, one of them takes a swipe at your leg and manages to make a cut. It's not that deep, but it's bleeding a lot.");
 							}
 						//PATH 1-1-2
 							if (sewerAlt == 0) {
