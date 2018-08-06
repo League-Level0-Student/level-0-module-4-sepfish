@@ -45,6 +45,9 @@ public class OwnAdventure {
 						//PATH 1-1-0
 							if (sewerAlt == 2) {
 								JOptionPane.showMessageDialog(null, "You hurry down the left path. Well, it wasn't a path as much as a damp, dark hallway.");
+								JOptionPane.showMessageDialog(null, "The hallway leads to a dead end. Silently wondering why such a hallway would exist, you quietly head back.");
+								JOptionPane.showMessageDialog(null, "Unfortunately, the guards are waiting for you.\nThere are just too many of them...");
+								JOptionPane.showMessageDialog(null, "END PATH 1-1-0");
 							}
 						//PATH 1-1-1
 							if (sewerAlt == 1) {
@@ -52,6 +55,8 @@ public class OwnAdventure {
 								JOptionPane.showMessageDialog(null, "They see you approaching, and unsheath their swords...");
 								JOptionPane.showMessageDialog(null, "You raise your dagger in response. You're a trained assassin. You can take them down.");
 								JOptionPane.showMessageDialog(null, "As you engage the guards in combat, one of them takes a swipe at your leg and manages to make a cut. It's not that deep, but it's bleeding a lot.");
+								JOptionPane.showMessageDialog(null, "The injury seems to have fueled you further. Feeling newfound strength, you're able to knock out every single one of the king's guards. Leaving them lying on the floor, you manage to make your escape.");
+								JOptionPane.showMessageDialog(null, "SUCCESS - END PATH 1-1-1");
 							}
 						//PATH 1-1-2
 							if (sewerAlt == 0) {
@@ -71,9 +76,14 @@ public class OwnAdventure {
 					//PATH 1-2
 					if (door == 0) {
 						JOptionPane.showMessageDialog(null, "The king leans in to discuss something with his men, and you decide to take your chance.");
-						JOptionPane.showMessageDialog(null, "You run as fast as you can towards the door with the dagger to shield you. The shouts of the guard follow you as you race through the (unlocked) door.");
+						JOptionPane.showMessageDialog(null, "You run as fast as you can towards the door with the dagger to shield you. The shouts of the guards follow you as you race through the (unlocked) door.");
 						JOptionPane.showMessageDialog(null, "A guard lunges towards you and you hold out the dagger to stop him.");
 						JOptionPane.showMessageDialog(null, "The dagger cuts him down and you're able to run out the door and jam it behind you. \nThat'll buy you some time.");
+						JOptionPane.showMessageDialog(null, "Strangely enough, nobody stops you as you run freely through the halls of the castle.");
+						JOptionPane.showMessageDialog(null, "You're able to make it to the front doors without any trouble. It just seemed too easy...");
+						JOptionPane.showMessageDialog(null, "As you stand at the front doors, you hear footsteps behind you. You whip around - but you're too late.");
+						JOptionPane.showMessageDialog(null, "You feel a sharp pain as you look down in surprise at a blade sticking out of your chest. 'Trying to escape? Not a chance,' a voice hisses in your ear.");
+						JOptionPane.showMessageDialog(null, "END PATH 1-2");
 					}
 					
 				}
@@ -98,6 +108,9 @@ public class OwnAdventure {
 					//PATH 2-1-0
 						if (sewerAlt == 2) {
 							JOptionPane.showMessageDialog(null, "You hurry down the left path. Well, it wasn't a path as much as a damp, dark hallway.");
+							JOptionPane.showMessageDialog(null, "The hallway leads to a dead end. Silently wondering why such a hallway would exist, you quietly head back.");
+							JOptionPane.showMessageDialog(null, "Unfortunately, the guards are waiting for you.");
+							JOptionPane.showMessageDialog(null, "END PATH 1-1-0");
 						}
 					//PATH 2-1-1
 						if (sewerAlt == 1) {
@@ -119,9 +132,43 @@ public class OwnAdventure {
 						//PATH 2-1-2-2
 							if (ans == 0) {
 								JOptionPane.showMessageDialog(null, "You decide not to go back and to keep brainstorming ways to escape.");
+								JOptionPane.showMessageDialog(null, "Within thirty minutes, the water level started to rise. The sewers churn, and soon you're not able to keep your head above the surface.");
+								JOptionPane.showMessageDialog(null, "At least you didn't die a prisoner.");
+								JOptionPane.showMessageDialog(null, "END PATH 2-1-2-2");
 							}
 							if (ans == 1) {
 								JOptionPane.showMessageDialog(null, "You decide to quietly head back through the murky water. Thankfully, you don't hear the guards as you climb back onto the path.");
+								JOptionPane.showMessageDialog(null, "Sneaking back into the castle, you have two choices for escape: the front doors of the castle or the gate to the gardens.");
+								int hmmDoor = JOptionPane.showOptionDialog(null, "Which way will you go?", "this is your chance to sing All Star", 0, JOptionPane.INFORMATION_MESSAGE, null, new String [] {"Front Door", "Garden Gate", "You know what nevermind"}, null);
+							
+							//PATH 2-1-2-2-0
+							if(hmmDoor == 0) {
+								JOptionPane.showMessageDialog(null, "You choose the front doors, despite them being heavily guarded.");
+								JOptionPane.showMessageDialog(null, "Strangely enough, nobody stops you as you run freely through the halls of the castle.");
+								JOptionPane.showMessageDialog(null, "You're able to make it to the front doors without any trouble. It just seemed too easy...");
+								JOptionPane.showMessageDialog(null, "As you stand at the front doors, you hear footsteps behind you. You whip around - but you're too late.");
+								JOptionPane.showMessageDialog(null, "You feel a sharp pain as you look down in surprise at a blade sticking out of your chest. 'Trying to escape? Not a chance,' a voice hisses in your ear.");
+								JOptionPane.showMessageDialog(null, "END PATH 2-1-2-2-0");
+							}
+							//PATH 2-1-2-2-1
+							if (hmmDoor == 1) {
+								JOptionPane.showMessageDialog(null, "You decide to choose the less conspicuous back gate.");
+								JOptionPane.showMessageDialog(null, "Strangely enough, nobody stops you as you sneak through the halls of the castle.");
+								JOptionPane.showMessageDialog(null, "You reach the back gardens of the castle and stop for a moment - it's truly a sight. But you're not planning to stay long.");
+								JOptionPane.showMessageDialog(null, "A simple wooden fence surrounds the gardens. Silently wondering what kind of security that was, you climb over the fence with ease.");
+								JOptionPane.showMessageDialog(null, "Now time for a bath.");
+								JOptionPane.showMessageDialog(null, "SUCCESS - END PATH 2-1-2-2-1");
+							}
+							//PATH 2-1-2-2-2
+							if (hmmDoor == 2) {
+								JOptionPane.showMessageDialog(null, "Well, what are you going to do, get killed?");
+								JOptionPane.showMessageDialog(null, "You flip an imaginary coin and pick the back gardens.");
+								JOptionPane.showMessageDialog(null, "Strangely enough, nobody stops you as you sneak through the halls of the castle.");
+								JOptionPane.showMessageDialog(null, "You reach the back gardens of the castle and stop for a moment - it's truly a sight. But you're not planning to stay long.");
+								JOptionPane.showMessageDialog(null, "A simple wooden fence surrounds the gardens. Silently wondering what kind of security that was, you climb over the fence with ease.");
+								JOptionPane.showMessageDialog(null, "Now time for a bath.");
+								JOptionPane.showMessageDialog(null, "SUCCESS - END PATH 2-1-2-2-2");
+							}
 							}
 						}
 					
